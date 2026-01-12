@@ -31,12 +31,30 @@
     font-weight: 700;
 }
 
+/* Navigation Links */
 .main-header ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
+}
+
+.main-header li {
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .main-header span {
     font-size: 17px;
     font-weight: 400;
+}
+
+/* Effects */
+.main-header li:hover {
+    background: var(--hover-color);
+    transition: background 0.3s ease;
+}
+
+.main-header li:active {
+    transform: scale(0.95);
 }
