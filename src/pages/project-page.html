@@ -20,8 +20,32 @@
     <link rel="stylesheet" href="/src/styles/header.css">
     <link rel="stylesheet" href="/src/styles/root.css">
     <style>
+        .app-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .project-list,
+        .project-description {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 40px;
+        }
         
-        
+        .project-list ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            padding: 0 30px;
+        }
+
+        .project-list li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -34,7 +58,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">
+                    <a href="/index.html">
                         <span>Home</span>
                     </a>
                 </li>
@@ -61,33 +85,41 @@
     </header>
 
     <main class="app-layout">
-        <!-- Project Carousel -->
-        <section class="project-carousel">
+        <!-- Project Lists -->
+        <section class="project-list">
             <h1 class="title">Projects</h1>
             <ul>
                 <li>
                     <a href="project.html">
-                        HTML Portfolio
+                        <img src="/assets/project-img/html-portfolio.png">
+                        <span>HTML Portfolio</span>
                     </a>
                 </li>
                 <li>
                     <a href="project.html">
-                        Websites Projects
+                        <img src="/assets/project-img/website-projects.png">
+                        <span>Websites Projects</span>
                     </a>
                 </li>
                 <li>
                     <a href="project.html">
-                        Student Productivity Hub
+                        <img src="/assets/project-img/student-hub.png">
+                        <span>Student Productivity Hub</span>
                     </a>
                 </li>
                 <li>
-                    <a href="project.html">
-                        KeyCode
+                    <a href="project.html"><img src="/assets/project-img/keycode.png">
+                        <span>KeyCode</span>
                     </a>
                 </li>
                 <li>
-                    <a href="project.html">
-                        Stella-CREST Website
+                    <a href="project.html"><img src="/assets/project-img/stella.png">
+                        <span>Stella-CREST Website</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="project.html"><img src="/assets/project-img/python-project.png">
+                        <span>Python Projects</span>
                     </a>
                 </li>
             </ul>
@@ -95,6 +127,7 @@
 
         <!-- Project Description -->
         <section class="project-description">
+            <h1 class="title">Description</h1>
             <ul>
                 <li>
                     <!-- Description Here -->
