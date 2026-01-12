@@ -1,0 +1,39 @@
+/* Root */
+:root {
+    --bg-color: #191A1C;
+    --special-bg-color: #565963;
+    --primary-text-color: #FAFAFA;
+    --secondary-text-color: #a5a5a5;
+    --highlight-text-color: #d1d1d1;
+    --hover-color: #9c9c9c;
+    --border-color: #636363;
+    --box-color: #a3a3a3;
+    --input-color: #ebebeb;
+    --border-radius: 12px;
+    --box-shadow: 0 2px 7.5px 2px rgba(0, 0, 0, 0.25);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, "Crimson Text";
+    background: var(--bg-color);
+    color: var(--primary-text-color);
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
