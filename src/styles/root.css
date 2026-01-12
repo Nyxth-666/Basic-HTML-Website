@@ -45,6 +45,7 @@ ul {
     margin: 0 auto;
     padding: 40px 140px;
     align-items: center;
+    gap: 50px;
 }
 
 .title {
