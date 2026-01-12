@@ -17,49 +17,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:opsz,wght@14..32,100..900&family=Lilita+One&family=Pacifico&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/src/header-style/header.css">
+    <link rel="stylesheet" href="/src/styles/header.css">
+    <link rel="stylesheet" href="/src/styles/root.css">
     <style>
-        /* Root */
-        :root {
-            --bg-color: #191A1C;
-            --special-bg-color: #565963;
-            --primary-text-color: #FAFAFA;
-            --secondary-text-color: #a5a5a5;
-            --highlight-text-color: #d1d1d1;
-            --hover-color: #9c9c9c;
-            --border-color: #636363;
-            --box-color: #a3a3a3;
-            --input-color: #ebebeb;
-            --border-radius: 12px;
-            --box-shadow: 0 2px 7.5px 2px rgba(0, 0, 0, 0.25);
+        .app-layout {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            padding: 40px 140px 30px 140px;
+            align-items: center;
+            justify-content: center;
         }
 
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
         }
 
-        body {
-            font-family: Inter, "Crimson Text";
-            background: var(--bg-color);
-            color: var(--primary-text-color);
-            min-height: 100vh;
-            overflow-y: auto;
+        .hero-section h1 {
+            font-size: 90px;
+            font-family: 'Crimson Text';
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-            cursor: pointer;
+        .hero-section h2 {
+            font-family: 50px;
+            color: var(--secondary-text-color);
         }
-
-        ul {
-            list-style: none;
-        }
-
-        
     </style>
 </head>
 <body>
@@ -102,8 +88,8 @@
     <main class="app-layout">
         <!-- Hero Section -->
         <section class="hero-section">
-            <h1>Frontend Developer</h1>
-            <h2>html only with proper layout, no styling</h2>
+            <h1>I am a Front-End Developer</h1>
+            <h2>Aspiring Full-Stack Developer In The Making</h2>
         </section>
     </main>
 </body>
