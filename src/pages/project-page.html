@@ -37,7 +37,7 @@
         .project-list ul {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
+            gap: 30px;
             padding: 0 30px;
         }
 
@@ -45,6 +45,22 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            border-bottom: 1px dashed var(--border-color);
+            padding: 10px;
+        }
+
+        .project-list a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-list img {
+            width: 450px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -108,17 +124,20 @@
                     </a>
                 </li>
                 <li>
-                    <a href="project.html"><img src="/assets/project-img/keycode.png">
+                    <a href="project.html">
+                        <img src="/assets/project-img/keycode.png">
                         <span>KeyCode</span>
                     </a>
                 </li>
                 <li>
-                    <a href="project.html"><img src="/assets/project-img/stella.png">
+                    <a href="project.html">
+                        <img src="/assets/project-img/stella.png">
                         <span>Stella-CREST Website</span>
                     </a>
                 </li>
                 <li>
-                    <a href="project.html"><img src="/assets/project-img/python-project.png">
+                    <a href="project.html">
+                        <img src="/assets/project-img/python-project.png">
                         <span>Python Projects</span>
                     </a>
                 </li>
